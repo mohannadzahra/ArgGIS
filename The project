@@ -1,0 +1,73 @@
+In our project, we will determine the state of the river before the flood and during the flood 
+and note the differences in the areas and what are the risks that occurred during that 
+period, through a program Arcgis , so we need to download pictures of the geographical 
+maps from the American sites ( https://www.usgs.gov/ ) In our case the data is ready .
+
+## The steps : 
+
+- The data was downloaded from the United States Geological Survey (USGS) . 
+- We decompress the files and then we bring the data to a program ArcGis 
+- windows _ Image Anlaysis _ we define the Bands then Composile Bands 
+- We define the area to be analyzed by Rectancal located in the toolbar Drawing
+- Arc Toolbox _ Spailal analyst tools _ iso Cluster Unsupervised Classification number of classes about = 6 
+
+Enviroments processing _ Extent _ same as layer Area _ applay 
+
+- The last layer _ Layer properties _ we define all layers in the new file to be No color except for the 
+first layer then the course of the river is determined. 
+
+- There were major problems due to shadows in terrain so :
+
+Arc toolbox _ Spaial analyst tools _ Reclass _ Reclassify _ input raster (the first layer) we put all the 
+values in a column( New values) = 2 except that the first row = 1 and we apply. 
+
+- We delete all the water areas surrounding the river and within the study area until the course of the river remains.
+
+- Arc Toolbox _ From Raster _ Raster to polygon _ Ok. 
+
+- The last layer in Table of contens - Symbology - gridcode _ add all values _ ok.
+ 
+- The last Layer - Open Alttribute Table - select by attributes _  we put gridcode = 2 then we delet all select values. 
+
+- Now , we have to examine our Data and remove the erros due to shadows in terrain.
+
+- We apply the same steps to the second file and then we take the river flood layer and we merge with the river in the normal position 
+ and then we have a map before and after the flood . 
+ 
+- Add Basemap _ Imagerie then add (title, legend, etc).
+
+
+## Discussion:
+
+In Germany, floods are dealt with in what is known as the (Hochwasserschutzstrategien ) flood 
+response strategy . 
+
+This strategy is divided into:
+
+Flood prone area management - prediction and advance planning techniques - flood response techniques.
+
+## Notes and suggestions:
+
+♦ Building a group of dams along the river course .
+♦ Building blocking barriers on the edge of the river .
+♦ Cleaning the phrases and repairing them continuously .
+♦ Some layers must be dug on both sides of the river for the water to leak .
+♦ Avoid the presence of residential areas on the edge of the river .
+♦ Constant maintenance of water installations and wadis ducts . 
+♦ It is advisable before flooding to prepare an emergency bag containing lamp, radio, batteries, first aid kit in addition to food, water bottles and whistle.
+♦ But after the end of the flood, it is necessary to be very careful in dealing with the purposes that the flood water has reached, 
+  as it is recommended that children's toys be washed well and not eat foods that have been exposed to the flood water, 
+  as it is not recommended to drink directly from the water taps and preferably only drink bottled water.
+
+In the end we can say, floods are a natural phenomenon and cannot be prevented, but the extent of their risks can be reduced.
+
+
+References :
+
+- https://en.wikipedia.org/wiki/2002_European_floods
+- http://www.floodsite.net/juniorfloodsite/images/content/elbeflood2002.jpg
+- http://www.floodsite.net/juniorfloodsite/html/en/student/thingstoknow/geography/elbeflood2002.html
+- https://reliefweb.int/report/world/munich-res-analysis-natural-catastrophes-2002
+- http://www.floodsite.net/juniorfloodsite/images/content/cossebaude.jpg
+- https://c1.staticflickr.com/5/4033/4476013054_8b779e7fcf_b.jpg
+
