@@ -1,4 +1,4 @@
-# ArgGIS
+# ArcGIS
 
 ## Flooding of the Elbe
 
